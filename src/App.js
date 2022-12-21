@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Card from "./componentes/Card";
+import Navbar from './componentes/NavBar/Navbar';
+import Flex from './componentes/Flex/Flex';
+
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div>
+    
+       <div>
+      <Navbar/>
+      
+        <div>
+        <Flex>
+        <Card img="/imagen/argentina.jpg" tittle="pantalon" price={300} detail="pantalon"/>
+        <Card img="/imagen/depaul.jpg"tittle="remera" price={500} detail="remera"/>
+        <Card img="/imagen/argentina.jpg" tittle="pantalon" price={300} detail="pantalon"/>
+        
+        </Flex>
+        </div>
     </div>
+
+    
+      </div>
   );
 }
 
